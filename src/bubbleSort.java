@@ -6,8 +6,8 @@ public class bubbleSort{
             for(int j=i+1;j<=array.length-1;j++){
                 if(array[i]>array[j]){
                     int temp = array[i];
-                    array[j] = array[i];
-                    array[i] = temp;
+                    array[i] = array[j];
+                    array[j] = temp;
                 }
             }
         }
@@ -15,7 +15,8 @@ public class bubbleSort{
     }
     public static void main(String[] args){
         int arr[] ={4, 2, 3,5,1};
-        System.out.println(Arrays.toString(bubbleSort(arr)));
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
 }
